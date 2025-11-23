@@ -35,8 +35,8 @@ Print the result to the console.
 
 ## Results
 For tests were used 2 files:
-- small.jpeg
-- sample-for-tests.jpeg
+- small.jpg
+- sample-jpg-file-for-testing.jpg
 
 
 ### Small file result
