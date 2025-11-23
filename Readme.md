@@ -43,11 +43,11 @@ For tests were used 2 files:
 ```bash
 Summary
   code_turbojpeg/code_turbojpeg ./small.jpg ran
-    1.03 ± 0.01 times faster than code_freeimage/code_freeimage ./small.jpg
-    1.13 ± 0.01 times faster than code_d_turbo/code_d_turbo ./small.jpg
-    3.63 ± 0.04 times faster than code_simple/code_simple ./small.jpg
-    4.74 ± 0.05 times faster than code_imageformats/code_imageformats ./small.jpg
-    6.47 ± 0.06 times faster than code_gamut/code_gamut ./small.jpg
+    1.04 ± 0.02 times faster than code_freeimage/code_freeimage ./small.jpg
+    1.15 ± 0.02 times faster than code_d_turbo/code_d_turbo ./small.jpg
+    3.07 ± 0.03 times faster than code_gamut/code_gamut ./small.jpg
+    3.69 ± 0.05 times faster than code_simple/code_simple ./small.jpg
+    4.76 ± 0.05 times faster than code_imageformats/code_imageformats ./small.jpg
 ```
 
 ### Large file result
@@ -66,6 +66,8 @@ Every D library was built with
 ```bash
 dub build -b=release
 ```
+
+For Gamut also `--combined` option was added.
 
 C library was built with:
 ```bash
