@@ -1,0 +1,16 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/code_imageformats
+code_imageformats.so
+code_imageformats.dylib
+code_imageformats.dll
+code_imageformats.a
+code_imageformats.lib
+code_imageformats-test-*
+*.exe
+*.pdb
+*.o
+*.obj
+*.lst

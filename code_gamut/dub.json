@@ -1,0 +1,13 @@
+{
+	"authors": [
+		"Sergei Giniatulin"
+	],
+	"copyright": "Copyright © 2025, Sergei Giniatulin",
+	"dependencies": {
+		"gamut": "~>3.3.3"
+	},
+    "dflags": ["-boundscheck=off"],
+	"description": "A minimal D application.",
+	"license": "proprietary",
+	"name": "code_gamut"
+}

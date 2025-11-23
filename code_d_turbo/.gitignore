@@ -1,0 +1,16 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/code_d_turbo
+code_d_turbo.so
+code_d_turbo.dylib
+code_d_turbo.dll
+code_d_turbo.a
+code_d_turbo.lib
+code_d_turbo-test-*
+*.exe
+*.pdb
+*.o
+*.obj
+*.lst

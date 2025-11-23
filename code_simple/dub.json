@@ -1,0 +1,12 @@
+{
+	"authors": [
+		"Sergei Giniatulin"
+	],
+	"copyright": "Copyright © 2025, Sergei Giniatulin",
+	"dependencies": {
+		"simple-image": "~>0.2.0"
+	},
+	"description": "A minimal D application.",
+	"license": "proprietary",
+	"name": "code_simple"
+}

@@ -1,0 +1,18 @@
+{
+	"authors": [
+		"Sergei Giniatulin"
+	],
+	"copyright": "Copyright © 2025, Sergei Giniatulin",
+	"dependencies": {
+		"bindbc-freeimage": "~>1.1.0"
+	},
+    "versions": ["FI_318"],
+    "lflags": ["-Llib"],
+    "subConfigurations": {
+        "bindbc-freeimage": "dynamicBC"
+    },
+    "dflags": ["-betterC"],
+	"description": "A minimal D application.",
+	"license": "proprietary",
+	"name": "code_freeimage"
+}

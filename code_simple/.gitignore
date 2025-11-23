@@ -1,0 +1,16 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/code_simple
+code_simple.so
+code_simple.dylib
+code_simple.dll
+code_simple.a
+code_simple.lib
+code_simple-test-*
+*.exe
+*.pdb
+*.o
+*.obj
+*.lst

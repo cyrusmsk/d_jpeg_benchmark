@@ -1,0 +1,16 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/code_freeimage
+code_freeimage.so
+code_freeimage.dylib
+code_freeimage.dll
+code_freeimage.a
+code_freeimage.lib
+code_freeimage-test-*
+*.exe
+*.pdb
+*.o
+*.obj
+*.lst

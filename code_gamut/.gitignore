@@ -1,0 +1,16 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/code_gamut
+code_gamut.so
+code_gamut.dylib
+code_gamut.dll
+code_gamut.a
+code_gamut.lib
+code_gamut-test-*
+*.exe
+*.pdb
+*.o
+*.obj
+*.lst
