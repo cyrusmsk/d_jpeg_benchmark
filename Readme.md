@@ -36,29 +36,32 @@ Print the result to the console.
 ## Results
 For tests were used 2 files:
 - small.jpg
-- sample-jpg-file-for-testing.jpg
+- large.jpg
 
+Tests were run on M1 Pro chip.
 
 ### Small file result
 ```bash
 Summary
   code_turbojpeg/code_turbojpeg ./small.jpg ran
-    1.04 ± 0.02 times faster than code_freeimage/code_freeimage ./small.jpg
-    1.15 ± 0.02 times faster than code_d_turbo/code_d_turbo ./small.jpg
-    3.07 ± 0.03 times faster than code_gamut/code_gamut ./small.jpg
-    3.69 ± 0.05 times faster than code_simple/code_simple ./small.jpg
-    4.76 ± 0.05 times faster than code_imageformats/code_imageformats ./small.jpg
+    1.04 ± 0.01 times faster than code_freeimage/code_freeimage ./small.jpg
+    1.13 ± 0.01 times faster than code_d_turbo/code_d_turbo ./small.jpg
+    3.06 ± 0.02 times faster than code_gamut/code_gamut ./small.jpg
+    3.67 ± 0.03 times faster than code_simple/code_simple ./small.jpg
+    4.77 ± 0.04 times faster than code_imageformats/code_imageformats ./small.jpg
+    5.97 ± 0.21 times faster than python ./code_pil/code.py ./small.jpg
 ```
 
 ### Large file result
-```
+```bash
 Summary
-  code_freeimage/code_freeimage ./sample-jpg-file-for-testing.jpg ran
-    1.00 ± 0.01 times faster than code_turbojpeg/code_turbojpeg ./sample-jpg-file-for-testing.jpg
-    1.09 ± 0.01 times faster than code_d_turbo/code_d_turbo ./sample-jpg-file-for-testing.jpg
-    2.99 ± 0.02 times faster than code_simple/code_simple ./sample-jpg-file-for-testing.jpg
-    3.39 ± 0.07 times faster than python ./code_pil/code.py ./sample-jpg-file-for-testing.jpg
-    5.10 ± 0.05 times faster than code_imageformats/code_imageformats ./sample-jpg-file-for-testing.jpg
+  code_turbojpeg/code_turbojpeg ./large.jpg ran
+    1.04 ± 0.00 times faster than code_freeimage/code_freeimage ./large.jpg
+    1.06 ± 0.01 times faster than code_d_turbo/code_d_turbo ./large.jpg
+    2.57 ± 0.01 times faster than code_gamut/code_gamut ./large.jpg
+    2.61 ± 0.01 times faster than code_simple/code_simple ./large.jpg
+    2.67 ± 0.05 times faster than python ./code_pil/code.py ./large.jpg
+    5.71 ± 0.03 times faster than code_imageformats/code_imageformats ./large.jpg
 ```
 
 ## Build
@@ -73,6 +76,8 @@ C library was built with:
 ```bash
 clang -O3 code.c -o code_turbojpeg -L./ -lturbojpeg 
 ```
+
+Fore tests was used [hyperfine](https://github.com/sharkdp/hyperfine)
 
 ## References
 - [Image sources](https://www.learningcontainer.com/sample-jpeg-file-download-for-testing/)
