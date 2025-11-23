@@ -11,6 +11,23 @@ From the D side were tested:
 - imageformats library
 - gamut library
 
+## Folder with library files
+FreeImage library currently configured to work with dynamic linking.
+So you need to create a folder "lib" and put files there:
+```
+libFreeImage.dylib
+libLibJXR.a
+libLibRAW.a
+```
+
+For turbojpeg also to the folder "code_turbojpeg" add:
+```
+libturbojpeg.a
+```
+And the same file need to be placed to "code_d_turbo/lib".
+
+For other libraries maybe will be required to install to the system.
+
 ## Task for the benchmark
 Open the JPEG file in RGB format.
 And calculate sum of R, G and B channels.
