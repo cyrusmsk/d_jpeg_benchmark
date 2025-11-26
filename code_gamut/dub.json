@@ -6,7 +6,7 @@
 	"dependencies": {
 		"gamut": "~>3.3.3"
 	},
-    "dflags": ["-boundscheck=off"],
+    "dflags": ["-mattr=+sse4.1", "-boundscheck=off"],
 	"description": "A minimal D application.",
 	"license": "proprietary",
 	"name": "code_gamut"
